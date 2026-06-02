@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = "8682987871:AAGSBLSJ6z5TEApbEEkt_m6h40yB7-3JinE"
+TOKEN = os.getenv("8682987871:AAGSBLSJ6z5TEApbEEkt_m6h40yB7-3JinE")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
