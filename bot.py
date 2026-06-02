@@ -40,4 +40,4 @@ app.add_handler(CommandHandler("semio", semio))
 
 print("Bot lancé...")
 
-app.run_polling()
+app.run_polling(drop_pending_updates=True)
